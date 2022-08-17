@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>My account</title>
+<!------ Include the above in your HEAD tag ---------->
+</head>
+<%- include('partials/accountstyle') %>
+<body>
+    <nav class="site-header sticky-top py-1">
+        <div class="container d-flex flex-column flex-md-row justify-content-between">
+          <a class="py-2 d-none d-md-inline-block" href="/myaccount">HOME</a>
+          <a class="py-2 d-none d-md-inline-block" href="/linkcard">Link card</a>
+	        <a class="py-2 d-none d-md-inline-block" href="/linkbank">Link Bank</a>
+          <a class="py-2 d-none d-md-inline-block" href="/chat">Chat</a>
+          <a class="py-2 d-none d-md-inline-block" href="" onclick="myfunction()">SUPPORT</a>
+          <a class="py-2 d-none d-md-inline-block" href="/signout">LOGOUT</a>
+          
+        </div>
+      </nav>
+   
+      <div class="main jumbotron">
+        <div class="container">
+          <h1 class="display-3 hello">Welcome to your account.</h1>
+        </div>
+      </div>
+
+     <div class="bottom-container">
+        <i class="fab social-icon fa-facebook-f fa-2x"></i>
+        <i class="fab social-icon fa-twitter fa-2x"></i>
+        <i class="fab social-icon fa-instagram fa-2x"></i>
+        <p>© Copyright 2020 E-MALL</p>
+      </div>
+    <script>
+        function myfunction(){
+            window.open('mailto:ranusinha3698@gmail.com');
+        }
+    </script>
+     
+  
+</body>
+
+</html>
