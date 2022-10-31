@@ -27,7 +27,6 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 const mongoURI = "mongodb+srv://omegamusic:AmanKumar@cluster-1.tob6s.mongodb.net/test";
 
-
 mongoose.connect(mongoURI,{useNewUrlParser: true}).then((res) =>{
     console.log("connected to mogodb successfully");
 });
