@@ -25,7 +25,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 // app.use(passport.initialize());
 // app.use(passport.session());
 
-const mongoURI = "mongodb+srv://aman:aman@cluster0.jgjceem.mongodb.net/?retryWrites=true&w=majority";
+const mongoURI = "mongodb+srv://aman:<aman>@cluster0.jgjceem.mongodb.net/?retryWrites=true&w=majority";
 
 mongoose.connect(mongoURI,{useNewUrlParser: true}).then((res) =>{
     console.log("connected to mogodb successfully");
